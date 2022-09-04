@@ -43,6 +43,7 @@ body {
 /* logo */
 
 .black-logo {
+    margin: 24px 1240px 25px 215px;
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: 700;
@@ -57,32 +58,54 @@ body {
 
 /* site-nav */
 
-.site-nav .link {
+.site-nav-list .link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
 }
+
+.site-nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.site-nav-list .item {
+    background-color: tomato;
+}
  
+.active {
+    background-color: tomato;
+    margin-right: 50px;
+}
+
+.site-nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-list .link:hover,
+.site-nav-list .link:focus {
     color: var(--accent-color);
 }
 
 .list {
     list-style: none;
-    margin-top:50px;
+    margin-top: -44px;
     margin-bottom: 188px;
 }
 
-.site-nav .active a {
+.site-nav-list .active a {
     color: var(--accent-color);
 }
 
 /* contacts */
+
+.address-title a {
+margin: 20px 1154px 60px 215px;
+white-space: nowrap;
+}
 
 .contact-link {
     color: var(--primary-text-color);
@@ -105,7 +128,7 @@ body {
     text-decoration: none;
 }
 
-.info-link {
+.info-link-contact {
     color: var(--primary-transparent-color);
     font-weight: 400;
     font-size: 14px;
@@ -118,8 +141,8 @@ body {
     color: var(--accent-color);
 }
 
-.contacts-list .info-link:hover,
-.contacts-list .info-link:focus {
+.contacts-list .info-link-contact:hover,
+.contacts-list .info-link-contact:focus {
     color: var(--accent-color);
 }
 
@@ -129,6 +152,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 
 
 /* header */
@@ -154,8 +178,6 @@ body {
 }
 
 .section-title {
-    background-color: tomato;
-
     margin-top: 0;
     margin-bottom: 94px;
     color: var(--title-text-color);
@@ -213,12 +235,22 @@ body {
     text-decoration: none;
 }
 
-.feature-list,
-.work-list,
-.work-features{
+.feature-list {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.work-list {
+    list-style: none;
+    margin-top: -44px;
+    margin-bottom: 94px;
+}
+
+.work-features {
+    list-style: none;
+    margin-top: 56px;
+    margin-bottom: 94px;
 }
 
 li a {
@@ -233,6 +265,7 @@ li a {
 }
 
 .white-logo {
+    margin: 60px 1240px 20px 215px;
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: 700;
@@ -274,6 +307,8 @@ li a {
 }
 
 .button-button {
+    margin-top: 6px;
+    margin-bottom: 56px;
     border-radius: 4px;
     padding: 6px 22px;
     border: transparent;
