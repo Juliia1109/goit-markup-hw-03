@@ -33,6 +33,12 @@ body {
     line-height: 1.71;
 }
                   
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 1230px;
+    outline: 2px solid tomato;
+}
 
 /* logo */
 
@@ -68,6 +74,8 @@ body {
 
 .list {
     list-style: none;
+    margin-top:50px;
+    margin-bottom: 188px;
 }
 
 .site-nav .active a {
@@ -118,15 +126,18 @@ body {
 .contacts-list {
     list-style: none;
     font-style: normal;
+    padding: 0;
+    margin: 0;
 }
 
 
 /* header */
-.header {
-    background-color: var(--primary-lightblack-color);
-}
 
 .header-title {
+    background-color: var(--primary-lightblack-color);
+
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -143,6 +154,10 @@ body {
 }
 
 .section-title {
+    background-color: tomato;
+
+    margin-top: 0;
+    margin-bottom: 94px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -151,6 +166,8 @@ body {
 }
 
 .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -158,7 +175,14 @@ body {
     text-transform: uppercase;
 }
 
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 94px;
+}
+
 .work-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -175,6 +199,8 @@ body {
 }
 
 .text-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -191,6 +217,8 @@ body {
 .work-list,
 .work-features{
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 li a {
@@ -222,6 +250,9 @@ li a {
 /* button */
 
 .button-subject {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: transparent;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 16px;
@@ -242,18 +273,10 @@ li a {
     cursor: pointer;
 }
 
-
-/* .section-buttons-button {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
 .button-button {
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: transparent;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
